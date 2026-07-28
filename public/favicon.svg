@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="295 68 90 122" role="img" aria-label="RAI">
+<defs>
+<linearGradient id="raiShieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#3b82f6"/>
+<stop offset="100%" stop-color="#06b6d4"/>
+</linearGradient>
+<linearGradient id="raiBoltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#ec4899"/>
+<stop offset="100%" stop-color="#f97316"/>
+</linearGradient>
+<clipPath id="raiShieldClip">
+<path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z"/>
+</clipPath>
+</defs>
+<path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z" fill="url(#raiShieldGrad)"/>
+<path d="M 347 82 L 306 130 L 337 130 L 326 170 L 375 118 L 347 118 Z" fill="url(#raiBoltGrad)" transform="rotate(90 340 130)" clip-path="url(#raiShieldClip)"/>
+<circle cx="340" cy="80" r="6" fill="#eab308"/>
+</svg>
