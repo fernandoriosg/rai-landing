@@ -124,25 +124,25 @@ Expertise en derecho corporativo mexicano y fronterizo. Especialista en complian
 <div className="flex gap-2 flex-wrap">
 <span className="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">Legal</span>
 <span className="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full">Frontera</span>
-<span className="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">Compliance</span>
+<span className="text-xs bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full">Compliance</span>
 </div>
 </div>
 </div>
 
 {/* Crackgilio */}
-<div className="group relative bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition overflow-hidden">
-<div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 group-hover:opacity-40 transition"></div>
+<div className="group relative bg-gradient-to-br from-pink-900/20 to-orange-900/20 border border-white/10 rounded-2xl p-8 hover:border-pink-500/50 transition overflow-hidden">
+<div className="absolute -top-20 -right-20 w-40 h-40 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 group-hover:opacity-40 transition"></div>
 <div className="relative z-10">
-<div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-4"></div>
+<div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full mb-4"></div>
 <h3 className="text-2xl font-bold mb-2">Crackgilio</h3>
 <p className="text-sm text-gray-400 mb-4">AI Engineer • Tech Stack • Startups</p>
 <p className="text-gray-300 mb-4">
 Maestría en AI applications. Stack técnico: n8n, Vapi, APIs, modelos LLM. Profundo conocimiento de clínicas y negocios mexicanos fronterizos.
 </p>
 <div className="flex gap-2 flex-wrap">
-<span className="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">IA</span>
-<span className="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">Tech</span>
-<span className="text-xs bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full">Startups</span>
+<span className="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">IA</span>
+<span className="text-xs bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full">Tech</span>
+<span className="text-xs bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full">Startups</span>
 </div>
 </div>
 </div>
@@ -161,7 +161,7 @@ Maestría en AI applications. Stack técnico: n8n, Vapi, APIs, modelos LLM. Prof
 <p className="text-sm text-gray-400">Conocemos clínicas, negocios y regulaciones de México-EE.UU.</p>
 </div>
 <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition">
-<Zap className="w-8 h-8 text-purple-400 mb-3" />
+<Zap className="w-8 h-8 text-pink-400 mb-3" />
 <p className="font-bold mb-2">Implementación rápida</p>
 <p className="text-sm text-gray-400">De idea a producción en semanas, no meses</p>
 </div>
@@ -206,10 +206,10 @@ Probar en vivo →
 
 {/* Voice */}
 <div className="group relative">
-<div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-100 transition duration-1000"></div>
+<div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-orange-600 rounded-2xl blur opacity-25 group-hover:opacity-100 transition duration-1000"></div>
 <div className="relative bg-black border border-white/20 rounded-2xl p-8">
 <div className="flex items-center gap-3 mb-6">
-<div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center">
+<div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-orange-600 rounded-full flex items-center justify-center">
 <Zap className="w-6 h-6" />
 </div>
 <h3 className="text-2xl font-bold">Recepcionista Voz IA</h3>
@@ -225,7 +225,7 @@ Contesta todas las llamadas. Bilingüe, sin pausas incómodas, naturalmente. Age
 <p className="text-xs text-gray-400">en no-shows / mes</p>
 </div>
 
-<a href={CALL_LINK} className="w-full inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition">
+<a href={CALL_LINK} className="w-full inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-orange-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition">
 Llamar y probar →
 </a>
 </div>
@@ -273,7 +273,7 @@ Comenzar
 <div className="group relative md:scale-105 z-10">
 <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition duration-1000 animate-pulse"></div>
 <div className="relative bg-black border border-white/30 rounded-2xl p-8 h-full flex flex-col">
-<div className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-black text-xs font-black px-4 py-2 rounded-full w-fit mb-6">
+<div className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xs font-black px-4 py-2 rounded-full w-fit mb-6">
 MÁS POPULAR
 </div>
 
@@ -301,8 +301,8 @@ Comenzar ahora →
 </div>
 
 {/* Retainer */}
-<div className="group relative bg-gradient-to-br from-purple-900/30 to-transparent border border-purple-500/30 rounded-2xl p-8 hover:border-purple-400/60 transition overflow-hidden">
-<div className="absolute -top-16 -right-16 w-32 h-32 bg-purple-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-40 transition"></div>
+<div className="group relative bg-gradient-to-br from-yellow-900/30 to-transparent border border-yellow-500/30 rounded-2xl p-8 hover:border-yellow-400/60 transition overflow-hidden">
+<div className="absolute -top-16 -right-16 w-32 h-32 bg-yellow-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-40 transition"></div>
 
 <h3 className="text-2xl font-bold mb-3 relative z-10">Retainer</h3>
 <p className="text-gray-400 text-sm mb-6 relative z-10">Soporte + optimización continua</p>
@@ -315,13 +315,13 @@ Comenzar ahora →
 <ul className="space-y-3 mb-8 text-sm relative z-10">
 {['Soporte técnico dedicado', 'Optimización mensual', 'Reportes de impacto', 'Compliance actualizado'].map((item) => (
 <li key={item} className="flex items-start gap-2 text-gray-300">
-<span className="text-purple-400 font-bold mt-1">→</span>
+<span className="text-yellow-400 font-bold mt-1">→</span>
 <span>{item}</span>
 </li>
 ))}
 </ul>
 
-<a href={waLink('Hola, quiero contratar el plan Retainer de RAI')} target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center border border-purple-400/50 text-purple-300 py-3 rounded-lg font-semibold hover:bg-purple-500/10 transition relative z-10">
+<a href={waLink('Hola, quiero contratar el plan Retainer de RAI')} target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center border border-yellow-400/50 text-yellow-300 py-3 rounded-lg font-semibold hover:bg-yellow-500/10 transition relative z-10">
 Contratar
 </a>
 </div>
