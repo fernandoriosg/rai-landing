@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Shield, Phone, Zap, ArrowRight } from 'lucide-react';
+import { ChevronDown, Phone, Zap, ArrowRight } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '16562265640';
 const WHATSAPP_DISPLAY = '+1 (656) 226-5640';
@@ -26,6 +26,35 @@ return (
 <path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z" fill="url(#raiShieldGrad)" />
 <path d="M 347 82 L 306 130 L 337 130 L 326 170 L 375 118 L 347 118 Z" fill="url(#raiBoltGrad)" transform="rotate(90 340 130)" clipPath="url(#raiShieldClip)" />
 <circle cx="340" cy="80" r="6" fill="#eab308" />
+</svg>
+);
+}
+
+function RAIShieldIcon({ className = 'w-8 h-10' }) {
+return (
+<svg viewBox="295 68 90 122" className={className} role="img" aria-label="Escudo RAI">
+<defs>
+<linearGradient id="raiShieldOnlyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stopColor="#3b82f6" />
+<stop offset="100%" stopColor="#06b6d4" />
+</linearGradient>
+</defs>
+<path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z" fill="url(#raiShieldOnlyGrad)" />
+<circle cx="340" cy="80" r="6" fill="#eab308" />
+</svg>
+);
+}
+
+function RAIBoltIcon({ className = 'w-8 h-10' }) {
+return (
+<svg viewBox="295 68 90 122" className={className} role="img" aria-label="Rayo RAI">
+<defs>
+<linearGradient id="raiBoltOnlyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stopColor="#ec4899" />
+<stop offset="100%" stopColor="#f97316" />
+</linearGradient>
+</defs>
+<path d="M 347 82 L 306 130 L 337 130 L 326 170 L 375 118 L 347 118 Z" fill="url(#raiBoltOnlyGrad)" transform="rotate(90 340 130)" />
 </svg>
 );
 }
@@ -177,7 +206,7 @@ Maestría en AI applications. Stack técnico: n8n, Vapi, APIs, modelos LLM. Prof
 {/* Value Props */}
 <div className="grid md:grid-cols-3 gap-6">
 <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition">
-<Shield className="w-8 h-8 text-blue-400 mb-3" />
+<RAIShieldIcon className="w-8 h-10 mb-3" />
 <p className="font-bold mb-2">Legal + Técnico</p>
 <p className="text-sm text-gray-400">Único equipo que maneja IA Y compliance legal en la frontera</p>
 </div>
@@ -187,7 +216,7 @@ Maestría en AI applications. Stack técnico: n8n, Vapi, APIs, modelos LLM. Prof
 <p className="text-sm text-gray-400">Conocemos clínicas, negocios y regulaciones de México-EE.UU.</p>
 </div>
 <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition">
-<Zap className="w-8 h-8 text-pink-400 mb-3" />
+<RAIBoltIcon className="w-8 h-10 mb-3" />
 <p className="font-bold mb-2">Implementación rápida</p>
 <p className="text-sm text-gray-400">De idea a producción en semanas, no meses</p>
 </div>
