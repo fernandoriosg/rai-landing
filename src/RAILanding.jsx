@@ -7,6 +7,29 @@ const CALL_LINK = 'tel:+16562265640';
 const BOOKING_LINK = 'https://api.leadconnectorhq.com/widget/booking/cWCS0I0FvEGNDF1rroYK';
 const waLink = (msg) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 
+function RAILogo({ className = 'w-8 h-10' }) {
+return (
+<svg viewBox="295 68 90 122" className={className} role="img" aria-label="RAI">
+<defs>
+<linearGradient id="raiShieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stopColor="#3b82f6" />
+<stop offset="100%" stopColor="#06b6d4" />
+</linearGradient>
+<linearGradient id="raiBoltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stopColor="#ec4899" />
+<stop offset="100%" stopColor="#f97316" />
+</linearGradient>
+<clipPath id="raiShieldClip">
+<path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z" />
+</clipPath>
+</defs>
+<path d="M 305 90 L 305 120 Q 305 160 340 180 Q 375 160 375 120 L 375 90 L 340 80 L 305 90 Z" fill="url(#raiShieldGrad)" />
+<path d="M 347 82 L 306 130 L 337 130 L 326 170 L 375 118 L 347 118 Z" fill="url(#raiBoltGrad)" transform="rotate(90 340 130)" clipPath="url(#raiShieldClip)" />
+<circle cx="340" cy="80" r="6" fill="#eab308" />
+</svg>
+);
+}
+
 export default function RAILanding() {
 const [expandedFAQ, setExpandedFAQ] = useState(null);
 
@@ -36,7 +59,10 @@ return (
 {/* Header */}
 <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
 <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-<div className="text-2xl font-black gradient-text">RAI</div>
+<div className="flex items-center gap-2">
+<RAILogo className="w-7 h-9" />
+<span className="text-2xl font-black gradient-text">RAI</span>
+</div>
 <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-300">
 <a href="#team" className="hover:text-white transition">Equipo</a>
 <a href="#demos" className="hover:text-white transition">Demos</a>
@@ -92,7 +118,7 @@ Ver cómo funciona
 </div>
 <div className="flex items-center justify-center h-full relative z-10">
 <div className="text-center">
-<Zap className="w-16 h-16 mx-auto mb-4 animate-pulse" />
+<RAILogo className="w-16 h-20 mx-auto mb-4 drop-shadow-lg" />
 <p className="text-sm font-bold">RAI</p>
 <p className="text-xs text-gray-200 mt-2">Implementación IA Legal</p>
 </div>
@@ -352,7 +378,10 @@ Enviar WhatsApp
 <div className="max-w-6xl mx-auto px-6">
 <div className="grid md:grid-cols-4 gap-8 mb-8">
 <div>
-<div className="text-white font-black mb-4 gradient-text">RAI</div>
+<div className="flex items-center gap-2 mb-4">
+<RAILogo className="w-6 h-8" />
+<span className="text-white font-black gradient-text">RAI</span>
+</div>
 <p className="text-sm text-gray-400">Implementación de IA con respaldo legal para clínicas, prácticas y negocios.</p>
 </div>
 <div>
